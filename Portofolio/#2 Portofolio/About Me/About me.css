@@ -1,0 +1,278 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET */
+
+.header {
+    background-color: grey;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 4px solid black;
+}
+
+.header p {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
+    float: left;
+}
+
+.header li {
+    display: inline-block;
+    position: relative;
+    left: 65%;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    margin-right: 25px;
+}
+
+.header a:hover {
+    color: lightskyblue;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    background-color: grey;
+}
+
+.left {
+    height: 900px;
+    width: 700px;
+    background-color: aqua;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0px 0px 10px 5px black;
+    border-radius: 20px;
+    opacity: 0;
+    animation: left 1s 0.5s forwards;
+}
+
+@keyframes left {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.left .profil {
+    width: 150px;
+    height: 150px;
+    margin-left: 250px;
+    margin-top: 40px;
+    border-radius: 50%;
+    background-image: url(profil.jpeg);
+    background-size: cover;
+    background-position-y: -80px;
+    border: 3px solid black;
+}
+
+.left .aboutme {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.left .aboutme h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.left .aboutme p {
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.right {
+    height: 900px;
+    width: 700px;
+    background-color: aqua;
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    box-shadow: 0px 0px 10px 5px black;
+    border-radius: 20px;
+    opacity: 0;
+    animation: right 1s 1.5s forwards;
+}
+
+@keyframes right {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.right .skill {
+    float: left;
+}
+
+.right .skill h1 {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.right .skill ul {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.right .hobi {
+    margin-left: 350px;
+}
+
+.right .hobi h1 {
+    margin-top: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.right .hobi ul {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.right .forecast {
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.right .forecast h1 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.right .forecast ul {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.right .button1 {
+    width: 73px;
+    height: 35px;
+    border: 3px solid black;
+    box-shadow: 7px 5px 10px 3px black;
+    margin-top: -49px;
+    margin-left: 350px;
+    position: relative;
+    top: 350px;
+    left: 200px;
+}
+
+.button1 a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: yellow;
+    padding: 8px 3px;
+    position: absolute;
+}
+
+.right .button2 {
+    width: 73px;
+    height: 35px;
+    border: 3px solid black;
+    box-shadow: 7px 5px 10px 3px black;
+    margin-top: -49px;
+    margin-left: 350px;
+    position: relative;
+    top: 358px;
+    left: 50px;
+}
+
+.button2 a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: yellow;
+    padding: 8px 10px;
+    position: absolute;
+}
+
+.button1:hover {
+    animation: button 0.5s forwards;
+}
+
+.button2:hover {
+    animation: button 0.5s forwards;
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
